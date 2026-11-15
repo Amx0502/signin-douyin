@@ -1,0 +1,51 @@
+:root {
+  color-scheme: light;
+  --app-line: #e5e9f0;
+  --app-text: #172033;
+  --app-muted: #64748b;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#app {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  background: #f4f7fb;
+  color: var(--app-text);
+  font-family: system-ui, -apple-system, "Segoe UI", "PingFang SC",
+    "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: inherit;
+}
+
+/* 卡片与表单控件统一圆角，和页面里各面板观感一致 */
+.el-card {
+  border-radius: 16px;
+}
+.el-input__wrapper,
+.el-textarea__inner,
+.el-select__wrapper {
+  border-radius: 10px;
+}
+.el-button {
+  border-radius: 10px;
+  font-weight: 600;
+}
+.el-tag {
+  border-radius: 999px;
+}
+
+/* 移动端下拉统一不超出视口（长账号名/任务名场景） */
+.el-select__popper {
+  max-width: calc(100vw - 24px);
+}

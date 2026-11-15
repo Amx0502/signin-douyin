@@ -1,0 +1,22 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+venv/
+.venv/
+
+# 运行时数据（自动生成，勿入库）
+backend/data/
+backend/logs/
+*.db
+*.db-journal
+
+# 前端
+frontend/node_modules/
+frontend/dist/
+
+# 编辑器 / 系统
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
